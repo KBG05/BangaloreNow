@@ -1,110 +1,70 @@
 # BangaloreNow
 
-### Your City, Unfiltered.
+### Everything a techie in Bangalore needs, in one place.
 
-> Bangalore is a city that never sleeps — a restless metropolis of innovation, ambition, and culture.
-> But in this endless churn, the truth gets buried. Signals drown in noise.
-> How do you know the *real* pulse of the city?
+BangaloreNow is a real-time dashboard for Bangalore's tech and startup scene. Hackathons, meetups, demo days, talks, workshops, job boards, communities — the things builders actually care about are scattered across dozens of sites, Discords, calendars, and feeds. BangaloreNow pulls them into a single live view.
 
-**BangaloreNow is your singular answer.**
+If it matters to someone building in Bangalore, the goal is for it to be here.
 
-We are building the definitive, real-time dashboard for Bangalore.
-Not another scattered blog, not another walled app — but a single, living system for everything that matters in this city.
-
-🔗 Visit: [https://bangalorenow.live](https://bangalorenow.live)
+🔗 Live: [https://bangalorenow.live](https://bangalorenow.live)
 
 ---
 
-## Beta Release: The Event Horizon
+## Beta Release: Events
 
-This is our first battlefield: **events**.
+The first module is **tech and startup events**.
 
-Bangalore is defined by constant movement — tech meetups, art shows, gigs, conferences, underground gatherings. Yet the city’s event space is fractured across platforms, feeds, and calendars.
+Right now the city's event data lives across Luma, Meetup, Eventbrite, community Discords, Twitter, and countless individual sites. There's no single place to see what's on this week. BangaloreNow fixes that. An automated pipeline collects, filters, and enriches event data from across these sources and surfaces it in one continuously updated feed.
 
-We unify it. Our automated pipeline hunts, filters, and enhances event data, collapsing it into a single, live view.
+Things you'll find:
 
-Whether it’s:
+* **Startup pitch nights & demo days** (e.g. Koramangala)
+* **Hackathons & build weekends**
+* **Tech meetups & talks** (e.g. Indiranagar)
+* **Design / product / engineering workshops** (e.g. Jayanagar)
+* **Founder and community gatherings**
 
-* A **startup pitch night** in Koramangala
-* A **concert** in Indiranagar
-* A **design workshop** in Jayanagar
-* Or an **academic lecture** in Malleshwaram
-
-If it’s happening, it’s on **BangaloreNow.live**.
-
-This is only the entry point.
+One feed, all the sources, no tab-hopping.
 
 ---
 
-## Our Foundation & Gratitude
+## Acknowledgements
 
-No revolution starts from nothing.
-Our pipeline builds upon the foundational work of **@captn3m0** and the **blr-today** project.
+The pipeline builds on the open-source work of **@captn3m0** and the **blr-today** project. Their open dataset, `events.db`, provided the initial foundation for organizing the city's event data. We're grateful for their contribution.
 
-Their open-source dataset, `events.db`, was the first step toward organizing the city’s chaos. We extend our respect and gratitude for their contribution.
-
-Explore their work here:
-👉 [https://github.com/blr-today/dataset](https://github.com/blr-today/dataset)
+Source: [https://github.com/blr-today/dataset](https://github.com/blr-today/dataset)
 
 ---
 
-## The Engine: Automated & Scalable
+## Architecture
 
-This is not a hobby script running on someone’s laptop.
-Our backbone is a **fully automated, cloud-native system** deployed on **Google Cloud Platform (GCP)**.
+The system is a **fully automated, cloud-native pipeline** deployed on **Google Cloud Platform (GCP)**.
 
-* **Relentless ingestion** of new data
-* **Automated filtering and enrichment** for precision
-* **Scalable infrastructure** ready for city-scale load
-* **Enterprise-grade reliability**, engineered to run without interruption
+* **Continuous ingestion** from across the web — sites, feeds, and community sources
+* **Automated filtering and enrichment** for data quality and relevance
+* **Scalable infrastructure** designed for city-scale load
+* **High reliability**, engineered to run continuously without manual intervention
 
-The result: when you open BangaloreNow, you see the city in **real time, with no lag and no gaps**.
-
----
-
-## The Vision: Beyond Events
-
-Events are just the beginning. Our mission is to map **all moving parts of Bangalore** into a single living system.
-
-Near-term expansions include:
-
-* **Civic Intelligence** → Tracking BBMP tenders and public works to expose where taxpayer money flows.
-* **Urban Alerts** → Monitoring and reporting service disruptions like water shortages, power cuts, and civic hazards.
-* **Personalized Dashboards** → Empowering residents to build their own city cockpit: news, data, and alerts tailored to their lives.
-
-Long-term: to become the **indispensable urban dashboard for every citizen of Bangalore**.
+The result is a dashboard that reflects what's happening in the scene in real time, with minimal lag and minimal gaps.
 
 ---
 
-## Join the Revolution
+## Contributing
 
-This is not just another project.
-This is a stand against opacity, against platforms that silo knowledge, against fragmentation.
+The project is built in the open and the entire system will be open-sourced — no closed components, no hidden APIs. It's built by builders, for builders.
 
-Bangalore deserves **clarity, transparency, and access**.
-And it deserves a platform built in the **open**.
+We're looking for contributors in the following areas, listed by current priority:
 
-We will open-source the entire system.
-No closed walls. No hidden APIs. No gatekeeping.
+1. **Frontend Developers** — Building the interface for viewing the scene.
+2. **Designers** — Turning raw data into a clean, fast, usable interface.
+3. **Backend / Cloud Engineers** — Hardening the pipelines, scaling the architecture, and improving reliability.
+4. **ML / MLOps Engineers** — Building data processing for dedup, relevance ranking, anomaly detection, and automated insights.
 
-This is a call to those willing to help **engineer the future of the city**.
+### Why contribute
 
-### We need you. Ranked by urgency:
-
-1. **Frontend Developers** — To craft the interface through which the city is seen.
-2. **Designers** — To shape raw data into experiences that inform, engage, and move people.
-3. **Backend / Cloud Engineers** — To strengthen the pipelines, scale the architecture, and ensure the system never breaks.
-4. **ML / MLOps Engineers** — To transform data into intelligence, detect anomalies, predict patterns, and automate insights.
-
----
-
-## Why Join Us?
-
-* You’ll be building infrastructure that directly impacts **millions of residents**.
-* Your work will be **fully open-source**, credited to you, and freely used by the city.
-* You won’t just be another contributor. You’ll be part of the **founding circle** of a movement.
-
-This is your chance to put your mark on the **digital DNA of Bangalore**.
+* You'll be building infrastructure used by Bangalore's tech and startup community.
+* Your work will be **fully open-source** and credited to you.
+* Early contributors join as part of the project's founding group.
 
 ---
 
@@ -116,23 +76,23 @@ This is your chance to put your mark on the **digital DNA of Bangalore**.
 **Kushal B Gowda**
 * Email: [kushalb2005@gmail.com](mailto:kushalb2005@gmail.com)
 
+**Anish Kasetty**
+* Email: [anishkasetty@gmail.com](mailto:anishkasetty@gmail.com)
+
 ---
 
 ## License
 
-This project and its data are licensed under the **Open Data Commons Open Database License (ODbL) v1.0**.
+Licensed under the **Open Data Commons Open Database License (ODbL) v1.0**.
 
-That means it will **always remain free and open**.
-You can use it, remix it, and build upon it — but you must also give back.
-
-This ensures the revolution cannot be privatized, sold off, or closed down.
+The project and its data remain free and open. You can use, remix, and build upon it, provided you share derivative data back under the same terms. This keeps the project from being closed off or privatized.
 
 ---
 
 <div align="center">
 
-# Know your city. Own your city. Build its future.
+# Know your scene. Build its future.
 
 [https://bangalorenow.live](https://bangalorenow.live)
 
-</div>  
+</div>
