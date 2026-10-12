@@ -16,7 +16,6 @@ router=APIRouter()
 @router.get("/get-all-events", response_model=list[EventBase])
 async def retrieve_all_events(session:Session=Depends(get_db)):
     """Get all events with coordinates. Includes events with null fields as long as name, lat, long exist."""
-    print(settings.all_cors_origins, settings.BACKEND_CORS_ORIGINS)
     try:
         payload = get_all_events(session)  # type:ignore
         return payload
